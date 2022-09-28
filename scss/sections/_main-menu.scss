@@ -201,8 +201,8 @@
 
                 .dropdown-item {
                     &:hover {
-                        background-color: $color-theme-dark;
-                        color: $color-white;
+                        background-color: $color-theme-dark  !important;
+                        color: $color-white  !important;
                     }
                 }
             }
