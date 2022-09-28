@@ -1,0 +1,19 @@
+.dropdown-menu {
+    border: none;
+    width: 100%;
+    transform: translate(0px, 24px) !important;
+}
+
+.dropdown-item {
+    background-color: $color-theme;
+    color: $color-white;
+    margin: 0;
+    width: 100%;
+
+    & :hover {
+        margin: 0;
+        background-color: $color-theme-dark;
+        color: $color-white;
+    }
+
+}

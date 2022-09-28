@@ -1,0 +1,19 @@
+.section-title {
+    color: $color-theme-dark;
+    text-align: center;
+    padding: 3rem 0;
+
+    & h1 {
+        font-family: $font-play;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-36;
+    }
+
+    & h1 span {
+        color: $color-theme;
+    }
+
+    & p {
+        margin: 1rem 0;
+    }
+}

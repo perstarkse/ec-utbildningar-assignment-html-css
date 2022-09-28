@@ -1,0 +1,121 @@
+.showcase {
+    background-color: $color-grey-3;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (min-width:375px) {
+            flex-direction: row;
+        }
+
+        @include md {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .showcase-text-holder {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 3rem 1rem;
+
+            @include md {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 3rem 0rem;
+            }
+
+            @include lg {
+                display: block;
+                padding: 3rem 1rem;
+            }
+
+            h1 {
+                font-family: $font-play;
+                font-size: $font-size-60;
+                text-align: center;
+                margin-bottom: 2rem;
+
+                @include md {
+                    font-family: $font-play;
+                    font-size: $font-size-60;
+                    text-align: center;
+                    margin-bottom: none;
+                }
+
+                @include lg {
+                    text-align: left;
+                }
+
+                strong {
+                    color: $color-theme;
+                }
+            }
+
+            p {
+                display: none;
+
+                @include md {
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 3rem;
+                }
+
+                @include lg {
+                    display: block;
+                    text-align: left;
+                    margin-bottom: 2rem;
+                }
+            }
+
+            a {
+                background-color: $color-white;
+                color: $color-theme-dark;
+                border-radius: $border-radius-medium;
+                border: $color-theme-dark;
+                font-weight: $font-weight-medium;
+
+                @include lg {
+                    text-align: center;
+                    border: none;
+                }
+
+                &:hover {
+                    background-color: $color-theme-dark;
+                    color: $color-theme-light;
+
+                    @include lg {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .image-showcase {
+            display: none;
+
+            @include md {
+                display: none;
+                width: 100%;
+            }
+
+            @include lg {
+                display: block;
+            }
+        }
+
+        .tiny-screen-easter-egg {
+            display: flex;
+
+            @media (min-width:375px) {
+                display: none;
+
+            }
+        }
+    }
+}

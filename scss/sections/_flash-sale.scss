@@ -1,0 +1,115 @@
+.flash-sale {
+    .container-fluid {
+        height: 435px;
+        background-color: $color-theme-dark;
+
+        .container {
+            position: relative;
+
+            button {
+                background-color: $color-white;
+                color: $color-theme;
+
+                &:hover {
+                    background-color: $color-theme;
+                    color: $color-theme-dark;
+                }
+            }
+
+            .flash-sale-banner {
+                height: 265px;
+                width: 255px;
+                position: absolute;
+                top: 1px;
+                left: 12px;
+                background-color: $color-theme;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                h1 {
+                    font-family: $font-play;
+                    font-size: 3.75rem;
+                    color: $color-white;
+                    font-weight: $font-weight-bold;
+                }
+
+                .second-h1 {
+                    margin-top: -1.3rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    color: $color-white;
+                    font-weight: $font-weight-medium;
+                }
+
+                button {
+                    position: absolute;
+                    bottom: -100px;
+
+                    @include lg {
+                        position: absolute;
+                        bottom: -100px;
+                        display: none;
+                    }
+                }
+            }
+
+            .flash-sale-countdown {
+                position: absolute;
+                right: 12px;
+                top: 122px;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                button {
+                    display: none;
+
+                    @include lg {
+                        display: flex;
+                    }
+                }
+
+                .countdown-circles {
+                    display: none;
+                    flex-direction: row;
+
+                    @include lg {
+                        display: flex;
+                    }
+
+                    .countdown-single-circle {
+                        height: 109px;
+                        width: 109px;
+                        background-color: $color-white;
+                        outline: 2px dashed $color-theme;
+                        border-radius: $border-radius-rounded;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        .countdown-single-circle-number {
+                            font-size: 2.25rem;
+                            font-weight: $font-weight-bold;
+                            font-family: $font-play;
+                            color: $color-theme;
+                        }
+
+                        .countdown-single-circle-text {
+                            color: black;
+                            margin-top: -0.5rem;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+}

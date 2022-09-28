@@ -1,0 +1,35 @@
+.btn-theme {
+    background-color: $color-theme;
+    color: $color-white;
+    border-radius: $border-radius-medium;
+    font-weight: $font-weight-medium;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-theme:hover {
+    background-color: $color-theme-dark;
+    color: $color-white;
+}
+
+.bg-theme {
+    background-color: $color-theme;
+}
+
+.text-theme {
+    color: $color-theme;
+}
+
+.instock {
+    color: $color-product-instock;
+}
+
+.out-of-stock {
+    color: $color-product-outofstock;
+}
+
+.required {
+    color: $color-theme;
+}

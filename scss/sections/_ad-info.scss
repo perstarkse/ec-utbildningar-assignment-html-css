@@ -1,0 +1,97 @@
+.ad-info-section {
+    background-color: $color-grey-1;
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .ad-part {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-theme;
+            width: 255px;
+            height: 418px;
+
+            h1 {
+                font-size: 3.75rem;
+                color: $color-white;
+                font-family: $font-play;
+                font-weight: $font-weight-bold;
+                margin-top: -3rem;
+
+                span {
+                    font-size: 2.25rem;
+                }
+            }
+
+            p {
+                color: $color-white;
+            }
+
+            button {
+                background-color: $color-theme-dark;
+                width: 154px;
+                height: 54px;
+                position: absolute;
+                bottom: 90px;
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: $color-white;
+                    color: $color-theme;
+                }
+            }
+        }
+
+        .info-text-part {
+            display: none;
+            position: relative;
+
+            @include sm {
+                display: flex;
+                grid-column: -1;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 255px;
+                margin-left: 1rem;
+            }
+
+            @include md {
+                display: flex;
+                grid-column: -1;
+                flex-direction: column;
+                align-items: left;
+                justify-content: center;
+                width: 455px;
+            }
+
+            @include lg {
+                width: 545px;
+            }
+
+            p {
+                font-size: 0.875rem;
+                color: $color-white;
+            }
+
+            button {
+                position: absolute;
+                width: 172px;
+                height: 54px;
+                background-color: $color-white;
+                color: $color-theme;
+                bottom: 90px;
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: $color-theme-dark;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}

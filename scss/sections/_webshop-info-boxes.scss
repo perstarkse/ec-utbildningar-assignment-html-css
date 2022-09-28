@@ -1,0 +1,69 @@
+.webshop-info-boxes {
+    padding: 1rem 0;
+
+    @include md {
+        padding: 3rem 0;
+    }
+
+    @include lg {
+        padding: 4rem 0;
+    }
+
+    .container-fluid {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 1rem;
+        max-width: 1600px;
+        flex-wrap: wrap;
+
+        @include md {
+            gap: 2rem;
+        }
+
+        .info-box {
+            flex: 1;
+            display: flex;
+            padding: 0.8rem;
+            align-items: center;
+            background-color: $color-theme-light;
+            border-radius: $border-radius-small;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background-color: $color-theme;
+                color: $color-white;
+            }
+
+            img {
+                margin-right: 1rem;
+                transition: all 0.3s ease-in-out;
+                filter: brightness(100%);
+            }
+
+            &:hover img {
+                filter: brightness(1000%);
+            }
+
+            h1 {
+                color: $color-theme;
+                font-size: 1rem;
+                font-weight: $font-weight-medium;
+                transition: all 0.3s ease-in-out;
+            }
+
+            p {
+                display: none;
+                transition: all 0.3s ease-in-out;
+
+                @include lg {
+                    display: flex;
+                }
+            }
+
+            &:hover h1 {
+                color: $color-white;
+                align-self: flex-start;
+            }
+        }
+    }
+}

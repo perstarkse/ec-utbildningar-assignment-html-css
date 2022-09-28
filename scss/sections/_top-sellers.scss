@@ -1,0 +1,67 @@
+.top-sellers {
+    .container {
+        .container {
+            display: grid;
+            grid-template-columns: 1;
+            grid-template-rows: 1fr 1fr;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+
+            @include md {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(350px, 550px));
+                grid-template-rows: 1fr 1fr;
+                gap: 0.5rem;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .card {
+                border-radius: $border-radius-small;
+                max-width: 550px;
+                max-height: 345px;
+                min-width: 350px !important;
+                min-height: 345px;
+            }
+
+            .top-sellers-card-1 {
+                grid-column: 1 / -1;
+                grid-row: 1 / -1;
+                max-height: 700px;
+                min-height: 700px !important;
+
+                @include md {
+                    grid-column: 1 / 2;
+                    grid-row: 1 / -1;
+                    max-height: 700px;
+                    min-height: 700px !important;
+                }
+            }
+
+            .top-sellers-card-2 {
+                display: none;
+                grid-column: 2 / -1;
+                grid-row: 1 / 1;
+
+                @include md {
+                    display: block;
+                    grid-column: 2 / -1;
+                    grid-row: 1 / 1;
+                }
+            }
+
+            .top-sellers-card-3 {
+                display: none;
+                grid-column: 2 / -1;
+                grid-row: 2 / -1;
+
+                @include md {
+                    display: block;
+                    grid-column: 2 / -1;
+                    grid-row: 2 / -1;
+                }
+            }
+        }
+    }
+}

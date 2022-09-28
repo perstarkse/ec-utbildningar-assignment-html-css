@@ -1,0 +1,18 @@
+.featured-products {
+    .card-1 {
+        display: none;
+
+        @include xxl {
+            display: block;
+        }
+    }
+
+    .card-2 {
+        display: none;
+
+        @include md {
+            display: block;
+        }
+    }
+
+}

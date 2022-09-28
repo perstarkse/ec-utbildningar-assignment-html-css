@@ -1,0 +1,17 @@
+.new-arrivals {
+    .card-1 {
+        display: none;
+
+        @include xl {
+            display: block;
+        }
+    }
+
+    .card-2 {
+        display: none;
+
+        @include md {
+            display: block;
+        }
+    }
+}
