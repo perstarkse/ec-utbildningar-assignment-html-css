@@ -150,78 +150,6 @@
         }
     }
 
-    .main-menu nav {
-        border-top: 1px solid var(--color-grey-3);
-        border-bottom: 1px solid var(--color-grey-3);
-    }
-
-    .main-menu>nav>.container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .main-menu nav .browse-categories {
-        flex: 2;
-    }
-
-    .main-menu nav .special-offer {
-        display: none;
-    }
-
-    .main-menu nav .browse-categories button {
-        background-color: var(--color-theme);
-        color: var(--color-white);
-        font-size: 1rem;
-        width: 100%;
-        display: flex;
-        height: 50px;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.5rem 0.8rem;
-        border: none;
-        transition: 0.15s ease-in-out;
-    }
-
-    .main-menu nav .browse-categories button:hover {
-        background-color: var(--color-theme-dark);
-        color: var(--color-white);
-    }
-
-    .main-menu nav .browse-categories button span {
-        display: flex;
-        align-items: center;
-    }
-
-    .main-menu nav .browse-categories button>span>i {
-        font-size: 1.4em;
-    }
-
-    .main-menu nav .browse-categories .dropdown-menu {
-        padding: 0;
-        transform: translate(0px, 50px) !important;
-    }
-
-    @media (min-width:768px) {
-        .main-menu nav .special-offer {
-            flex: 3.5;
-            display: flex;
-            justify-content: end;
-        }
-
-        .main-menu nav .browse-categories button {
-            padding: 0.45rem 1rem;
-        }
-    }
-
-    @media (min-width: 992px) {
-        .main-menu nav .special-offer {
-            flex: 4.5;
-            display: flex;
-            justify-content: end;
-        }
-    }
-
     .menu-bottom {
         border-top: 1px solid $color-grey-3;
         border-bottom: 1px solid $color-grey-3;
@@ -270,6 +198,11 @@
             .dropdown-menu {
                 padding: 0;
                 transform: translate(0px, 50px) !important;
+
+                .dropdown-item:hover {
+                    background-color: $color-theme-dark;
+                    color: $color-white;
+                }
             }
         }
 
